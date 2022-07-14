@@ -1,0 +1,238 @@
+/* -base */
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --main-white-color: #ffffff;
+  --primary-background-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
+  --address-cont-color: rgba(255, 255, 255, 0.6);
+  --primary-logo-color: #000000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+}
+
+/* a {
+  text-decoration: none;
+} */
+
+body {
+  font-family: "Roboto", roboto, -apple-system, BlinkMacSystemFont, avenir next,
+    avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, noto, arial,
+    sans-serif;
+  letter-spacing: 0.03em;
+  background-color: var(--main-white-color);
+  color: var(--primary-text-color);
+}
+
+/* -buttons */
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background-color: var(--main-white-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button--primary {
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+}
+
+.button--primary:hover,
+.button--primary:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button--secondary {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-background-color);
+}
+
+.button--secondary:hover,
+.button--secondary:focus {
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* -logo */
+.logo {
+  text-decoration: none;
+  font-family: "Raleway", roboto, -apple-system, BlinkMacSystemFont, avenir next,
+    avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, noto, arial,
+    sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: var(--primary-logo-color);
+}
+
+.logo--footer {
+  color: var(--main-white-color);
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+/* -header */
+.nav__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--accent-color);
+}
+
+.nav__link.current {
+  color: var(--accent-color);
+}
+
+.contacts__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--accent-color);
+}
+
+/* -hero */
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+  background-color: var(--primary-background-color);
+}
+
+/* -features */
+.item-features__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.item-features__text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* -products */
+.products__title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+/* -team */
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.team__title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.team__item {
+  background-color: var(--main-white-color);
+}
+
+.item-team__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--secondary-text-color);
+}
+
+.item-team__text {
+  line-height: 1.19;
+}
+
+/* -footer */
+.footer {
+  background-color: var(--primary-background-color);
+}
+
+.address__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  color: var(--address-cont-color);
+}
+
+.address__link--geo {
+  color: var(--main-white-color);
+}
+
+.address__link--cont:hover,
+.address__link--cont:focus {
+  color: var(--accent-color);
+}
+/*  */
+/* styles of portfolio.html */
+/*  */
+
+/* -galery */
+.galery__link {
+  text-decoration: none;
+}
+
+.galery__title {
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+.galery__text {
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
