@@ -23,13 +23,31 @@
   overflow: hidden;
 }
 
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-/* a {
-  text-decoration: none;
-} */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 94px 0;
+}
 
 body {
   font-family: "Roboto", roboto, -apple-system, BlinkMacSystemFont, avenir next,
@@ -42,6 +60,8 @@ body {
 
 /* -buttons */
 .button {
+  display: inline-block;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -56,6 +76,8 @@ body {
 }
 
 .button--primary {
+  padding: 10px 32px;
+
   color: var(--main-white-color);
   background-color: var(--accent-color);
 }
@@ -66,6 +88,8 @@ body {
 }
 
 .button--secondary {
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -137,7 +161,14 @@ body {
 }
 
 /* -hero */
+.hero {
+  text-align: center;
+  background-color: var(--primary-background-color);
+}
+
 .hero__title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -145,11 +176,12 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
-  background-color: var(--primary-background-color);
 }
 
 /* -features */
 .item-features__title {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -163,6 +195,8 @@ body {
 
 /* -products */
 .products__title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -175,6 +209,8 @@ body {
 }
 
 .team__title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -182,10 +218,27 @@ body {
 }
 
 .team__item {
+  display: inline-block;
+  padding-bottom: 30px;
+  margin: -3px;
+
+  text-align: center;
+
   background-color: var(--main-white-color);
 }
 
+.item-team:not(:last-child) {
+  margin-right: 30px;
+}
+
+.item-team__img {
+  display: block;
+}
+
 .item-team__title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -198,7 +251,13 @@ body {
 
 /* -footer */
 .footer {
+  padding: 60px 0;
+
   background-color: var(--primary-background-color);
+}
+
+.address {
+  margin-top: 20px;
 }
 
 .address__link {
@@ -222,11 +281,26 @@ body {
 /*  */
 
 /* -galery */
+.filter__list {
+  padding-bottom: 50px;
+}
+
+.galery__item {
+  padding-bottom: 20px;
+  margin-top: 4px;
+}
+
 .galery__link {
   text-decoration: none;
 }
 
+.galery__img {
+  display: block;
+}
+
 .galery__title {
+  padding-top: 20px;
+
   font-size: 18px;
   line-height: 200%;
   letter-spacing: 0.06em;
