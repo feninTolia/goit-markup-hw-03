@@ -19,10 +19,10 @@
   </head>
   <body>
     <!-- header -->
-    <header>
-      <div class="container">
+    <header class="header">
+      <div class="container header-flex">
         <!-- logo and navigation-->
-        <nav class="nav">
+        <nav class="nav header-flex">
           <a class="logo" href="./index.html"
             ><span class="logo-accent">Web</span>Studio</a
           >
@@ -60,10 +60,11 @@
     <main>
       <section class="section">
         <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
           <!-- filter buttons -->
-          <ul class="filter__list list">
+          <ul class="filter__list list flex-cards">
             <li class="filter__item">
-              <button class="button button--secondary" type="button">
+              <button class="button button--secondary active" type="button">
                 Все
               </button>
             </li>
@@ -90,7 +91,7 @@
           </ul>
 
           <!-- galery -->
-          <ul class="galery__list list">
+          <ul class="galery__list list flex-cards">
             <li class="galery__item">
               <a class="galery__link" href="">
                 <img
@@ -99,8 +100,10 @@
                   alt="Ноутбук с открытым веб-сайтом Технокряк"
                   width="370"
                 />
-                <h2 class="galery__title">Технокряк</h2>
-                <p class="galery__text">Веб-сайт</p>
+                <div class="galery__thumb">
+                  <h2 class="galery__title">Технокряк</h2>
+                  <p class="galery__text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="galery__item">
@@ -111,8 +114,12 @@
                   alt="Два баскетболиста из Нового Орлеана и Голден Стар борятся за мяч"
                   width="370"
                 />
-                <h2 class="galery__title">Постер New Orlean vs Golden Star</h2>
-                <p class="galery__text">Дизайн</p>
+                <div class="galery__thumb">
+                  <h2 class="galery__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="galery__text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="galery__item">
@@ -123,8 +130,10 @@
                   alt="Логотип ресторана Seafood на фоне рыбы"
                   width="370"
                 />
-                <h2 class="galery__title">Ресторан Seafood</h2>
-                <p class="galery__text">Приложение</p>
+                <div class="galery__thumb">
+                  <h2 class="galery__title">Ресторан Seafood</h2>
+                  <p class="galery__text">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="galery__item">
@@ -135,8 +144,10 @@
                   alt="Черные накладные наушники"
                   width="370"
                 />
-                <h2 class="galery__title">Проект Prime</h2>
-                <p class="galery__text">Маркетинг</p>
+                <div class="galery__thumb">
+                  <h2 class="galery__title">Проект Prime</h2>
+                  <p class="galery__text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="galery__item">
@@ -147,8 +158,10 @@
                   alt="Две коробки Boxes, белая и коричневая"
                   width="370"
                 />
-                <h2 class="galery__title">Проект Boxes</h2>
-                <p class="galery__text">Приложение</p>
+                <div class="galery__thumb">
+                  <h2 class="galery__title">Проект Boxes</h2>
+                  <p class="galery__text">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="galery__item">
@@ -159,8 +172,10 @@
                   alt="Моноблок с открым веб-сайтом Inspiration has no Borders"
                   width="370"
                 />
-                <h2 class="galery__title">Inspiration has no Borders</h2>
-                <p class="galery__text">Веб-сайт</p>
+                <div class="galery__thumb">
+                  <h2 class="galery__title">Inspiration has no Borders</h2>
+                  <p class="galery__text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="galery__item">
@@ -171,8 +186,10 @@
                   alt="Разворот журнала Limited Edition"
                   width="370"
                 />
-                <h2 class="galery__title">Издание Limited Edition</h2>
-                <p class="galery__text">Дизайн</p>
+                <div class="galery__thumb">
+                  <h2 class="galery__title">Издание Limited Edition</h2>
+                  <p class="galery__text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="galery__item">
@@ -183,8 +200,10 @@
                   alt="Белая бирка LAB EL TAG"
                   width="370"
                 />
-                <h2 class="galery__title">Проект LAB</h2>
-                <p class="galery__text">Маркетинг</p>
+                <div class="galery__thumb">
+                  <h2 class="galery__title">Проект LAB</h2>
+                  <p class="galery__text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="galery__item">
@@ -195,8 +214,10 @@
                   alt="Человек работает за ноутбуком с открытым приложением Growing Business"
                   width="370"
                 />
-                <h2 class="galery__title">Growing Business</h2>
-                <p class="galery__text">Приложение</p>
+                <div class="galery__thumb">
+                  <h2 class="galery__title">Growing Business</h2>
+                  <p class="galery__text">Приложение</p>
+                </div>
               </a>
             </li>
           </ul>
