@@ -216,17 +216,17 @@ h3 {
 
 /* -hero */
 .hero {
-  min-height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-right: 15px;
-  padding-left: 15px;
 
   text-align: center;
   background-color: var(--primary-background-color);
 }
 
 .hero__title {
+  width: 693px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -287,7 +287,7 @@ h3 {
 }
 
 .item-team__title {
-  margin-top: 30px;
+  padding-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -339,7 +339,7 @@ h3 {
 .filter__list {
   gap: 8px;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .galery__item {
@@ -361,6 +361,8 @@ h3 {
 }
 
 .galery__title {
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 200%;
   letter-spacing: 0.06em;
